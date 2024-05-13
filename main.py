@@ -3,7 +3,7 @@ import processData
 
 
 def knn():
-    resultData = 0
+    resultData = 1
     print("resultData = ", resultData)
 
 # Main
