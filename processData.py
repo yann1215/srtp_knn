@@ -2,7 +2,7 @@ import numpy as np
 
 
 def calc_character_data(inData):
-    outData = inData + 1
+    outData = inData
     return outData
 
 
