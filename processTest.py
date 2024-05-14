@@ -1,5 +1,5 @@
-# function: include data process functions
-# variable: data input and output(label) path
+# function: include test data process functions
+# variable: test data input and output(label) path
 # update: 2024/5/14
 
 import pandas as pd
@@ -29,11 +29,11 @@ def process_data(file_target):
 
 # ---------- Data Path ----------
 # caution: notice function process_data() when changing data_path
-data_path = "D:/srtp/knn/data/input/"
+data_path = "D:/srtp/knn/data/test_input/"
 
 # ---------- Output Path ----------
 # caution: notice function process_data() when changing data_path_output
-data_path_output = "D:/srtp/knn/data/label/"
+data_path_output = "D:/srtp/knn/data/test_label/"
 # check if output folder exists
 if not os.path.exists(data_path_output):
     os.makedirs(data_path_output)  # create output folder
@@ -52,5 +52,5 @@ combined_temp = process_data("SA")
 combined_csv = pd.concat([combined_csv, combined_temp], ignore_index=True)
 
 # ---------- Save Combined Csv ----------
-combined_path = data_path.replace("input/", "") + "data.csv"
+combined_path = data_path.replace("test_input/", "") + "test.csv"
 combined_csv.to_csv(combined_path, index=False)
