@@ -24,7 +24,7 @@ def add_label(data, target):
 data_path = "D:/srtp/knn/testPy/input/"
 
 # output path
-# caution! notice function process_data() when changing data_path_output
+# caution: notice function process_data() when changing data_path_output
 data_path_output = "D:/srtp/knn/testPy/label/"
 # check if output folder exists
 if not os.path.exists(data_path_output):
