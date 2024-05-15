@@ -59,27 +59,3 @@ if __name__ == '__main__':
 
     print("Classification Report:")
     print(classification_report(label_test, label_predict))
-
-    # ---------- Plot Result ----------
-    # # actual result
-    # plt.figure()
-    # # plt.figure(figsize=(12, 6))
-    #
-    # plt.subplot(1, 2, 1)
-    # plt.scatter(data_test[:, "spotMean"], data_test[:, "spotSTD"],
-    #             c=label_test, cmap='viridis', marker='o', edgecolor='k', s=100)
-    # plt.title('Actual Results')
-    # # plt.xlabel(iris.feature_names[0])
-    # # plt.ylabel(iris.feature_names[1])
-    # plt.colorbar(ticks=[0, 1, 2], label='Classes')
-    #
-    # # predicted result
-    # plt.subplot(1, 2, 2)
-    # plt.scatter(data_test[:, "spotMean"], data_test[:, "spotSTD"], c=label_predict, cmap='viridis', marker='o', edgecolor='k', s=100)
-    # plt.title('Predicted Results')
-    # # plt.xlabel(iris.feature_names[0])
-    # # plt.ylabel(iris.feature_names[1])
-    # plt.colorbar(ticks=[0, 1, 2], label='Classes')
-    #
-    # plt.tight_layout()
-    # plt.show()
