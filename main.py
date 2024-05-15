@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
     # ---------- Fit Knn Model ----------
     # knn model name: knn
-    knn = KNeighborsClassifier(n_neighbors=10)
+    knn = KNeighborsClassifier(n_neighbors=3)
     knn.fit(data_train, label_train)
 
     # ---------- Load Test Data ----------
