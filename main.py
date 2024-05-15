@@ -22,10 +22,10 @@ if __name__ == '__main__':
     test_path = "D:/srtp/knn/data/test.csv"
 
     # features used in knn model
+    # full features include: "spotMean", "spotSTD", "speedMean", "speedSTD", "spotMax", "spotSTD/Mean"
     knn_feature = ["spotMean", "speedMean", "speedSTD", "spotMax", "spotSTD/Mean"]
 
     # ---------- Load Train Data ----------
-    # full_data include: "spotMean", "spotSTD", "speedMean", "speedSTD", "spotMax", "spotSTD/Mean"
     full_csv = pd.read_csv(csv_path, index_col=0)
 
     full_data = full_csv.loc[:, knn_feature]
